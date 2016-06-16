@@ -1,4 +1,4 @@
-//: [Previous](@previous)
+//: Playground - noun: a place where people can play
 
 import Foundation
 
@@ -11,12 +11,14 @@ func areaOfCircle(radius:Float) -> Float {
 
 
 func oddNumbers() -> [Float] {
-
+    
     var oddArray = [Float]()
     
     
     for number in 0...500 {
-       let isOdd = number % 2 == 1
+        
+        let isOdd = number % 2 == 1
+        
         if isOdd {
             oddArray.append(Float(number))
         }
@@ -32,7 +34,7 @@ func areaOfCircleWithRadii(radii:[Float]) -> Float {
     for radius in radii {
         sum = sum + areaOfCircle(radius)
     }
-
+    
     return sum
 }
 
@@ -44,4 +46,44 @@ areaOfCircleWithRadii(oddArray)
 
 let areas = oddArray.map { areaOfCircle($0) }
 
-//: [Next](@next)
+
+
+func evenNumbers() -> [Float] {
+    
+    var evenArray = [Float]()
+    
+    for number in 0...500 {
+        
+        let isEven = number % 2 == 0
+        
+        if isEven {
+            
+            evenArray.append(Float(number))
+        }
+    }
+    return evenArray
+}
+
+evenNumbers()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
